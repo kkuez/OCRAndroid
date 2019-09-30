@@ -7,7 +7,7 @@ import java.util.List;
 
 public class ObjectHub {
 
-    private ObjectHub instance;
+    private static ObjectHub instance;
 
     private List<Document> documentList;
 
@@ -15,13 +15,10 @@ public class ObjectHub {
         documentList = new ArrayList<>();
     }
 
-    public ObjectHub getInstance(){
+    public static ObjectHub getInstance(){
         if(instance == null){
             instance = new ObjectHub();
         }
         return instance;
     }
-
-
-
 }
