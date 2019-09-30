@@ -1,7 +1,10 @@
-package com.example.doerpinghaus.ocr_android;
+package com.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
+
+import com.example.doerpinghaus.ocr_android.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -9,5 +12,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView helloTextView = findViewById(R.id.helloTextView);
+        setContentView(R.layout.activity_menu);
     }
 }
